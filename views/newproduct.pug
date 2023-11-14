@@ -1,0 +1,17 @@
+extends layout 
+
+block content
+  form(action="/newproduct", method="POST" enctype="multipart/form-data")
+    label(for="productName") Product Name
+    input#productName(type="text", name="name", required)
+    label(for="description") Description
+    input#description(type="text", name="description", required)
+    label(for="price") Price
+    input#price(type="number", name="price", required)
+    label(for="stockQuantity") Stock Quantity
+    input#stockQuantity(type="number", name="stockQuantity", required)
+    label(for="imageUrl") Image URL
+    input#imageUrl(type="text", name="image_url")
+    label(for="imageUpload") Upload Image
+    input#imageUpload(type="file", name="imageUpload", accept=".jpeg, .png")
+    button(type="submit") Add Product

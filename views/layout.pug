@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/aodstyles.css')
+    script(src="/javascripts/cartvisibility.js" defer)
+  body
+    nav
+      div.nav-container
+        div.nav-logo
+          img(src='/images/blacklogosmall.png').logo
+        ul.nav-links
+          li
+            a(href='/') Index
+          li
+            a(href='/home') AOD Shoppe
+          li
+            a(href='/user') Register
+          li
+            a(href="#contact") Contact Us
+          li
+            if (user)
+              | Welcome, #{user.name}!
+              a(href='/logout') Logout
+            else
+              a(href='/login') Login
+          li 
+            button(id="cart-button") Toggle Cart
+
+
+      // Cart button
+      
+    div.cart-container
+      div(id="cart", style="visibility: hidden;")
+        container
+          table
+            thead
+              tr
+                th Product
+                th Qty 
+                th Weight (kg)
+                th Unit Price (ZAR)
+                th Cost
+            tbody.rounded-border
+              tr
+                td
+                td
+                td
+                td
+                td
+                td.tbutton 
+                  button -
+                td.tbutton 
+                  button +   
+          container
+            p Total 
+            button(id="takemymoney-button") "TMM"
+
+
+    h1= title
+    block content

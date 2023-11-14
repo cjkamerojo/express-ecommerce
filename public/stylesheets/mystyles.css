@@ -1,0 +1,510 @@
+
+/* ====================================
+              BOILERPLATE
+==================================== */
+
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  color: whitesmoke;
+  background-color: black;
+  margin: 2rem 2rem 2rem 2rem;
+  display: block;
+}
+
+main {
+  border-radius: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #b00b;
+  display: block;
+  background-color:rgb(250, 248, 248);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+}
+
+
+p {
+  color: white;
+  display: block;
+  padding: 3rem 1rem 3rem 1rem;
+  min-width: 360px;
+  max-width: 800px;
+}
+
+/* ====================================
+             NAVBAR
+==================================== */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  height: auto;
+  }
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline-start: 0px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 1.25rem;
+  }
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: whitesmoke;
+  border-radius: 0.25rem;
+  color:rgb(75, 2, 2);
+  }
+
+.logo {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.logo img{
+justify-content: flex-start;
+z-index: -1;
+}
+
+.nav-logo {
+  display: flex;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-direction: column;
+    border-radius: 10%;
+}
+
+.logo2 img {
+  width: 3rem;
+  height: auto;
+  min-width: 3rem;
+  max-width: 4.5rem;
+  }
+
+.logo2 #cart-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgb(250, 248, 248);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+/* ====================================
+              POPUP CART
+==================================== */
+
+#cart {
+  visibility: hidden;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 7rem;
+  min-height: auto;
+  z-index: 1;
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
+  background-color: rgba(0,0,0);
+  border: 0.1rem solid rgb(250, 248, 248);
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-total {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.cart-total p {
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  min-width: 2rem;
+}
+
+#takemymoney-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgb(90, 21, 21);
+  border-radius: 0.25rem;
+  border: 0.15rem solid whitesmoke;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 65%;
+} 
+
+#deleteadd {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 0.25rem;
+}
+
+
+/* ====================================
+              TABLE STYLES
+==================================== */
+
+
+/* Set base table styles */
+table {
+  border-collapse: collapse;
+  min-width: 160px;
+  font-size: 75%;
+  border-radius: 0.25rem;
+}
+
+tbody {
+  border-radius: 2rem;
+  text-align: center;
+}
+
+/* Set base cell styles */
+td, th {
+  /*border: 1px solid rgb(75, 2, 2);*/
+  padding: 0.25rem;
+  width: 8rem;
+}  
+
+/* Set header cell styles */
+th {
+  background-color: rgb(148, 37, 3);
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+/* Add hover effect to rows 
+tr:hover {
+  background-color: #7c0404;
+  max-width: auto;
+}
+*/  
+
+/* Add alternating row colors */
+tr:nth-child(even) {
+  background-color: #ad2a2a;
+}
+
+.tbutton {
+  border: none;
+  padding: 0.25rem;
+  width: 4rem;
+  background-color: rgb(0,0,0);
+  display: flex;
+  justify-content: center;
+}
+
+.table-container {
+  display: flex;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+.rounded-border {
+  border: 0.15rem whitesmoke solid;
+  border-radius: 0.25rem;
+}
+/* ====================================
+           ABOUT THE AUTHOR
+==================================== */
+
+section {
+  background-color: rgba(75, 22, 3);
+  border-radius: 0.8rem;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+  align-items: center;
+}
+
+#about img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  margin: 2rem 2rem;
+}
+
+#about a {
+  text-decoration: none;
+  color:red;
+}
+
+
+/* ====================================
+              PRODUCTS
+==================================== */
+
+#products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem 1rem;
+  align-items: center;
+  border: 0.25rem solid whitesmoke;
+  border-radius: 0.75rem;
+  width: 350px;
+  height: 700px;
+}
+
+.product img {
+  max-width: 300px;
+  margin: 2rem 2rem;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.product-name,
+.description, 
+.weight,
+.price {
+  padding: 1rem 1rem;
+  color: whitesmoke;
+}
+
+.description {
+  width: 300px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 1rem;
+}
+
+.addtocart-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-button {
+  background-color: whitesmoke;
+  color: black;
+  min-width: 2rem;
+  box-shadow: none;
+  border: 0.1rem solid whitesmoke;
+  border-radius: 0.25rem;
+}
+
+
+/* ====================================
+                PROJECTS
+  ==================================== */
+
+
+  #projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
+    align-items: center;
+    border: 0.25rem solid whitesmoke;
+    border-radius: 0.75rem;
+    width: 350px;
+    height: 700px;
+  }
+  
+  .project img {
+    max-width: 300px;
+    margin: 2rem 2rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem;
+  }
+
+
+
+/* ====================================
+              FOOTER
+==================================== */
+
+
+footer {
+  background-color: rgba(75, 22, 3, 0.500);
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+}
+
+footer .container {
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0.8rem;
+}
+
+footer .container div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .container ul li {
+  padding: 1.2rem 0rem;
+}
+
+footer .container li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer .container li a:hover {
+  color:rgb(148, 37, 3);
+}
+/* ====================================
+              MEDIA QUERIES
+==================================== */
+
+/* Media query for devices with a screen width of 600px or less */
+@media only screen and (max-width: 400px) {
+  body {
+    margin: 20px 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cart {
+    min-width: 160px;
+  }
+
+
+  table {
+    min-width: 160px;
+    max-width: 160px;
+  }
+  main {
+    font-size: 14px;
+    min-width: 160px;
+    max-width: 400px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    padding: 10px;
+  }
+  
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  
+  nav a {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+}

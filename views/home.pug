@@ -1,0 +1,68 @@
+extends layout
+
+block content
+  section
+    div#about
+      h1 Welcome to #{title}
+      p
+      | Is this really #{title}? 
+      br
+      | You bet your sweet bass it is! 
+      img(src='images/deathchibi.png')
+      
+      p
+      | This Mythical Shoppe is inspired by the Legendary Angel of Death.
+      br
+      | Some say he was programmed in the womb.
+      br
+      | Some say he was forged of a contract between a future artificial intelligence, and a demon named Edward.
+      br
+      | Some say he has one webbed foot.
+      br
+      | All we know is he's called:
+      br 
+      a(href='https://github.com/AngelODeath') The A.O.D.
+      div
+
+  main
+    div#products
+      container.product-container
+        div.product
+          img(src='images/products/aodshoppe/pureluck.png')
+          div.product-name 
+            h3 Pure Luck
+          div.price 10 Luckles
+          div.description 
+            | Pure Luck, at your disposal.
+            | Sourced from only the finest magical beings. Don't ask
+            | me how I got it. I did what I had to do, okay?
+
+      container.product-container
+        div.product
+          img(src='images/products/aodshoppe/flame.png')
+          div.product-name 
+            h3 A Flame Thingy
+          div.price 2 Luckles
+          div.description
+            | A fire spirit for all your household needs!
+            | It burns stuff, almost at random. Maybe it's like a fire-slime-demon,
+            | or something?
+
+      container.product-container
+        div.product
+          img(src='images/products/aodshoppe/crow.png')
+          div.product-name 
+            h3 Purple Crow
+          div.price 200 Luckles
+          div.description
+            | This is a purple crow. Enough said.
+
+      container.product-container
+        div.product
+          img(src='images/products/aodshoppe/waterverthisis.png')
+          div.product-name 
+            h3 Random Ability #17
+          div.price 7 Luckles
+          div.description
+            | The ability to shoot out... Whatever this thing is...
+            | What is it? Like a water spirit? Is this the natural enemy of Flame Thingy? 
